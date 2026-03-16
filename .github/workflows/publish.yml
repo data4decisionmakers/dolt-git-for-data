@@ -1,12 +1,12 @@
-name: test slides render
+name: Quarto publish
 
 on:
-  pull_request:
-    branches: [main, dev]
+  push:
+    branches: [main, master]
   workflow_dispatch:
 
 jobs:
-  test-slides-render:
+  build-deploy:
     runs-on: ubuntu-latest
     container: rocker/tidyverse:4.5.2
     env:
@@ -21,15 +21,14 @@ jobs:
       - name: Install system dependencies
         run: |
           apt-get update && apt-get install -y --no-install-recommends \
-          libxt6 libglpk-dev gh curl jq libjpeg-dev libcurl4-openssl-dev \
-          libssl-dev libxslt1-dev
+          libxt6 libglpk-dev gh curl jq rsync
 
       - name: Install Chrome
         run: |
           curl -LO https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
           apt-get install -y ./google-chrome-stable_current_amd64.deb
           rm google-chrome-stable_current_amd64.deb
-
+          
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
         with:
@@ -55,17 +54,8 @@ jobs:
           source("render_pdf.R")
         shell: Rscript {0}
 
-      - name: Deploy to Netlify
-        uses: nwtgck/actions-netlify@v3.0
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          publish-dir: './_slides'
-          production-branch: main
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          deploy-message:
-            'Deploy from GHA: ${{ github.event.pull_request.title || github.event.head_commit.message }} (${{ github.sha }})'
-          # these default to 'true'
-          enable-commit-comment: false
-          enable-github-deployment: false
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          folder: _slides
+          
