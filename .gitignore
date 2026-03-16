@@ -1,0 +1,11 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+README.html
+
+_slides
+
+/.quarto/
+**/*.quarto_ipynb

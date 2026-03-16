@@ -1,0 +1,15 @@
+---
+title: "dolt: git for data"
+subtitle: The Data as Code Series
+date: 17 March 2026
+date-modified: last-modified
+date-format: "DD MMMM YYYY"
+title-slide-attributes: 
+  data-background-color: "#002147"
+  #data-background-image: images/nutriverse_banner.png
+  data-background-size: auto
+  data-background-opacity: "0.5"
+---
+
+
+
