@@ -201,12 +201,13 @@ At the end of this session, participants should be able to:
 
 ## Thank you! {background-color="#002147" .center}
 
-* Slides can be viewed at https://d4dm.org/dolt-git-for-data
+* Slides can be viewed at [https://d4dm.org/dolt-git-for-data](https://d4dm.org/dolt-git-for-data)
 
 
-* PDF version of slides can be downloaded at https://d4dm.org/dolt-git-for-data.pdf
+* PDF version of slides can be downloaded at [https://d4dm.org/dolt-git-for-data.pdf](https://d4dm.org/dolt-git-for-data.pdf)
 
 
-* R scripts for slides available at https://github.com/data4decisionmakers/dolt-git-for-data
+* R scripts for slides available at [https://github.com/data4decisionmakers/dolt-git-for-data](https://github.com/data4decisionmakers/dolt-git-for-data)
+
 
 [![License for code](https://img.shields.io/badge/license_(for%20code)-GPL3.0-blue)](https://opensource.org/licenses/gpl-3.0.html) [![License for text](https://img.shields.io/badge/license_(for%20writing)-CC_BY_4.0-blue)](https://creativecommons.org/licenses/by/4.0/)
