@@ -1,6 +1,6 @@
 ---
 title: "dolt: git for data"
-subtitle: The Data as Code Series
+subtitle: The **Data as Code** Series
 date: 17 March 2026
 date-modified: last-modified
 date-format: "DD MMMM YYYY"
@@ -11,5 +11,202 @@ title-slide-attributes:
   data-background-opacity: "0.5"
 ---
 
+## Learning outcomes
+
+At the end of this session, participants should be able to:
+
+* describe the similarities between `git` and `dolt` and `GitHub` and `DoltHub`
+
+* use concepts of `dolt`-based version control of data in relation to `git`-based version control of code
+
+* identify the advantages and limitations of using `dolt` and `DoltHub` for version control of data
+
+* describe some relevant use cases for `dolt` and `DoltHub` for version control of data
+
+## Session outline
+
+1. What is `dolt` and `DotHub`
+
+3. Demonstration: How to initiate and manage a version-controlled database using `dolt` and `DoltHub`
+
+4. Use cases for version-controlled database using `dolt` and `DoltHub`
+
+## What is `dolt` and `DoltHub` {background-color="#002147" .center}
+
+## `dolt` {.center}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* an SQL database that can be forked, cloned, branched, merged, pushed, and pulled just like a `git` repository
+
+:::
+
+::: {.column width="50%"}
+
+![](images/dolt.avif){fig-align="center"}
+
+:::
+
+::::
+
+## `DoltHub` {.center}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+![](images/dolthub.avif){fig-align="center"}
+
+:::
+
+::: {.column width="50%"}
+
+* a place to share `dolt` databases
+
+* public data are hosted for free
+
+* adds a modern, secure, always on database management web GUI to the `dolt` ecosystem.
+
+:::
+
+::::
+
+## `dolt` is to `DoltHub` as `git` is to `GitHub` {.center}
+
+## Creating and managing a version-controlled database using `DoltHub` {background-color="#002147" .center}
+
+## Create and login to your `DoltHub` account {.center}
+
+## Go to the *Databases* tab and click on *Create Database* button {.center}
+
+![](images/step_01.png){fig-align="center"}
+
+## Give the database a name and a description and then create database {.center}
+
+![](images/step_02.png){fig-align="center"}
+
+## Click on *File upload* option {.center}
+
+![](images/step_03.png){fig-align="center"}
+
+## Give the new table a name {.center}
+
+![](images/step_04.png){fig-align="center"}
+
+## Click on *Browse files* and then select the data to upload {.center}
+
+![](images/step_05.png){fig-align="center"}
+
+## Choose primary keys for the table you uploaded {.center}
+
+![](images/step_06.png){fig-align="center"}
+
+## Add a commit message and specify a branch (optional) {.center}
+
+![](images/step_07.png){fig-align="center"}
+
+## {.center}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+![](images/step_08.png){fig-align="center"}
+
+:::
+
+::: {.column width="50%"}
+
+![](images/step_09.png){fig-align="center"}
+
+:::
+
+::::
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+![](images/step_10.png){fig-align="center"}
+
+:::
+
+::: {.column width="50%"}
+
+:::
+
+::::
+
+## Review pull request and merge {.center}
+
+![](images/step_11.png){fig-align="center"}
+
+## {.center}
+
+![](images/step_12.png){fig-align="center"}
+
+## Database is now created in main branch ... {.center}
+
+![](images/step_13.png){fig-align="center"}
+
+## ... and it is the same as in dev branch {.center}
+
+![](images/step_14.png){fig-align="center"}
+
+## Making versioned changes to the database {background-color="#002147" .center}
+
+## On `dev` branch, add a new row of data to the cyclones table {.center}
+
+![](images/step_15.png){fig-align="center"}
+
+## {.center}
+
+![](images/step_16.png){fig-align="center"}
+
+## Create a pull request from `dev` to `main` with the new row of data {.center}
+
+![](images/step_17.png){fig-align="center"}
+
+## {.center}
+
+![](images/step_18.png){fig-align="center"}
+
+## Select a reviewer of the pull request {.center}
+
+![](images/step_19.png){fig-align="center"}
+
+## Review the changes proposed by the pull request {.center}
+
+![](images/step_20.png){fig-align="center"}
+
+## Merge pull request to `main` {.center}
+
+![](images/step_21.png){fig-align="center"}
+
+## New row of data is now on `main` {.center}
+
+![](images/step_22.png){fig-align="center"}
+
+## Use cases {background-color="#002147" .center}
+
+* Data collaboration and curation on `DoltHub`
+
+* Distributing versioned data through `dolt` as an alternative to APIs
+
+* Data model quality control and versioning
+
+## What questions do you have? {background-color="#002147" .center}
+
+## Thank you! {background-color="#002147" .center}
+
+* Slides can be viewed at https://d4dm.org/dolt-git-for-data
 
 
+* PDF version of slides can be downloaded at https://d4dm.org/dolt-git-for-data.pdf
+
+
+* R scripts for slides available at https://github.com/data4decisionmakers/dolt-git-for-data
+
+[![License for code](https://img.shields.io/badge/license_(for%20code)-GPL3.0-blue)](https://opensource.org/licenses/gpl-3.0.html) [![License for text](https://img.shields.io/badge/license_(for%20writing)-CC_BY_4.0-blue)](https://creativecommons.org/licenses/by/4.0/)
