@@ -204,7 +204,7 @@ At the end of this session, participants should be able to:
 * Slides can be viewed at [https://d4dm.org/dolt-git-for-data](https://d4dm.org/dolt-git-for-data)
 
 
-* PDF version of slides can be downloaded at [https://d4dm.org/dolt-git-for-data.pdf](https://d4dm.org/dolt-git-for-data.pdf)
+* PDF version of slides can be downloaded at [https://d4dm.org/dolt-git-for-data/dolt-git-for-data.pdf](https://d4dm.org/dolt-git-for-data/dolt-git-for-data.pdf)
 
 
 * R scripts for slides available at [https://github.com/data4decisionmakers/dolt-git-for-data](https://github.com/data4decisionmakers/dolt-git-for-data)
