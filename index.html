@@ -132,7 +132,7 @@
 
 <section id="title-slide" data-background-color="#002147" data-background-opacity="0.5" data-background-size="auto" class="quarto-title-block center">
   <h1 class="title">dolt: git for data</h1>
-  <p class="subtitle">The Data as Code Series</p>
+  <p class="subtitle">The <strong>Data as Code</strong> Series</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -147,8 +147,193 @@ Ernest Guevarra
 
   <p class="date">17 March 2026</p>
 </section>
-<section class="slide level2">
+<section id="learning-outcomes" class="slide level2">
+<h2>Learning outcomes</h2>
+<p>At the end of this session, participants should be able to:</p>
+<ul>
+<li><p>describe the similarities between <code>git</code> and <code>dolt</code> and <code>GitHub</code> and <code>DoltHub</code></p></li>
+<li><p>use concepts of <code>dolt</code>-based version control of data in relation to <code>git</code>-based version control of code</p></li>
+<li><p>identify the advantages and limitations of using <code>dolt</code> and <code>DoltHub</code> for version control of data</p></li>
+<li><p>describe some relevant use cases for <code>dolt</code> and <code>DoltHub</code> for version control of data</p></li>
+</ul>
+</section>
+<section id="session-outline" class="slide level2">
+<h2>Session outline</h2>
+<ol type="1">
+<li><p>What is <code>dolt</code> and <code>DotHub</code></p></li>
+<li><p>Demonstration: How to initiate and manage a version-controlled database using <code>dolt</code> and <code>DoltHub</code></p></li>
+<li><p>Use cases for version-controlled database using <code>dolt</code> and <code>DoltHub</code></p></li>
+</ol>
+</section>
+<section id="what-is-dolt-and-dolthub" class="slide level2 center" data-background-color="#002147">
+<h2>What is <code>dolt</code> and <code>DoltHub</code></h2>
+</section>
+<section id="dolt" class="slide level2 center">
+<h2><code>dolt</code></h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>an SQL database that can be forked, cloned, branched, merged, pushed, and pulled just like a <code>git</code> repository</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/dolt.avif" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="dolthub" class="slide level2 center">
+<h2><code>DoltHub</code></h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/dolthub.avif" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<ul>
+<li><p>a place to share <code>dolt</code> databases</p></li>
+<li><p>public data are hosted for free</p></li>
+<li><p>adds a modern, secure, always on database management web GUI to the <code>dolt</code> ecosystem.</p></li>
+</ul>
+</div></div>
+</section>
+<section id="dolt-is-to-dolthub-as-git-is-to-github" class="slide level2 center">
+<h2><code>dolt</code> is to <code>DoltHub</code> as <code>git</code> is to <code>GitHub</code></h2>
+</section>
+<section id="creating-and-managing-a-version-controlled-database-using-dolthub" class="slide level2 center" data-background-color="#002147">
+<h2>Creating and managing a version-controlled database using <code>DoltHub</code></h2>
+</section>
+<section id="create-and-login-to-your-dolthub-account" class="slide level2 center">
+<h2>Create and login to your <code>DoltHub</code> account</h2>
+</section>
+<section id="go-to-the-databases-tab-and-click-on-create-database-button" class="slide level2 center">
+<h2>Go to the <em>Databases</em> tab and click on <em>Create Database</em> button</h2>
 
+<img data-src="images/step_01.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="give-the-database-a-name-and-a-description-and-then-create-database" class="slide level2 center">
+<h2>Give the database a name and a description and then create database</h2>
+
+<img data-src="images/step_02.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="click-on-file-upload-option" class="slide level2 center">
+<h2>Click on <em>File upload</em> option</h2>
+
+<img data-src="images/step_03.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="give-the-new-table-a-name" class="slide level2 center">
+<h2>Give the new table a name</h2>
+
+<img data-src="images/step_04.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="click-on-browse-files-and-then-select-the-data-to-upload" class="slide level2 center">
+<h2>Click on <em>Browse files</em> and then select the data to upload</h2>
+
+<img data-src="images/step_05.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="choose-primary-keys-for-the-table-you-uploaded" class="slide level2 center">
+<h2>Choose primary keys for the table you uploaded</h2>
+
+<img data-src="images/step_06.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="add-a-commit-message-and-specify-a-branch-optional" class="slide level2 center">
+<h2>Add a commit message and specify a branch (optional)</h2>
+
+<img data-src="images/step_07.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="section" class="slide level2 center">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/step_08.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/step_09.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/step_10.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+
+</div></div>
+</section>
+<section id="review-pull-request-and-merge" class="slide level2 center">
+<h2>Review pull request and merge</h2>
+
+<img data-src="images/step_11.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="section-1" class="slide level2 center">
+<h2></h2>
+
+<img data-src="images/step_12.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="database-is-now-created-in-main-branch" class="slide level2 center">
+<h2>Database is now created in main branch …</h2>
+
+<img data-src="images/step_13.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="and-it-is-the-same-as-in-dev-branch" class="slide level2 center">
+<h2>… and it is the same as in dev branch</h2>
+
+<img data-src="images/step_14.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="making-versioned-changes-to-the-database" class="slide level2 center" data-background-color="#002147">
+<h2>Making versioned changes to the database</h2>
+</section>
+<section id="on-dev-branch-add-a-new-row-of-data-to-the-cyclones-table" class="slide level2 center">
+<h2>On <code>dev</code> branch, add a new row of data to the cyclones table</h2>
+
+<img data-src="images/step_15.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="section-2" class="slide level2 center">
+<h2></h2>
+
+<img data-src="images/step_16.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="create-a-pull-request-from-dev-to-main-with-the-new-row-of-data" class="slide level2 center">
+<h2>Create a pull request from <code>dev</code> to <code>main</code> with the new row of data</h2>
+
+<img data-src="images/step_17.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="section-3" class="slide level2 center">
+<h2></h2>
+
+<img data-src="images/step_18.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="select-a-reviewer-of-the-pull-request" class="slide level2 center">
+<h2>Select a reviewer of the pull request</h2>
+
+<img data-src="images/step_19.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="review-the-changes-proposed-by-the-pull-request" class="slide level2 center">
+<h2>Review the changes proposed by the pull request</h2>
+
+<img data-src="images/step_20.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="merge-pull-request-to-main" class="slide level2 center">
+<h2>Merge pull request to <code>main</code></h2>
+
+<img data-src="images/step_21.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="new-row-of-data-is-now-on-main" class="slide level2 center">
+<h2>New row of data is now on <code>main</code></h2>
+
+<img data-src="images/step_22.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="use-cases" class="slide level2 center" data-background-color="#002147">
+<h2>Use cases</h2>
+<ul>
+<li><p>Data collaboration and curation on <code>DoltHub</code></p></li>
+<li><p>Distributing versioned data through <code>dolt</code> as an alternative to APIs</p></li>
+<li><p>Data model quality control and versioning</p></li>
+</ul>
+</section>
+<section id="what-questions-do-you-have" class="slide level2 center" data-background-color="#002147">
+<h2>What questions do you have?</h2>
+</section>
+<section id="thank-you" class="slide level2 center" data-background-color="#002147">
+<h2>Thank you!</h2>
+<ul>
+<li><p>Slides can be viewed at https://d4dm.org/dolt-git-for-data</p></li>
+<li><p>PDF version of slides can be downloaded at https://d4dm.org/dolt-git-for-data.pdf</p></li>
+<li><p>R scripts for slides available at https://github.com/data4decisionmakers/dolt-git-for-data</p></li>
+</ul>
+<p><a href="https://opensource.org/licenses/gpl-3.0.html"><img data-src="https://img.shields.io/badge/license_(for%20code)-GPL3.0-blue" alt="License for code"></a> <a href="https://creativecommons.org/licenses/by/4.0/"><img data-src="https://img.shields.io/badge/license_(for%20writing)-CC_BY_4.0-blue" alt="License for text"></a></p>
 
 </section>
     </div>
